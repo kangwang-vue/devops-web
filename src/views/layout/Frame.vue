@@ -13,23 +13,20 @@
             <a-select-option value="Yiminghe">yiminghe</a-select-option>
           </a-select>
         </div>
-        <div class="header-right">
-          <a-icon type="question-circle" />
-        </div>
       </div>
       <div class="layout-content">
         <div class="menu">
           <a-menu mode="vertical" @click="handleClick">
-            <a-menu-item key="1">工作台</a-menu-item>
-            <a-menu-item key="2">数据基础管理</a-menu-item>
-            <a-menu-item key="3">需求管理</a-menu-item>
-            <a-menu-item key="4">分支管理</a-menu-item>
-            <a-menu-item key="5">发布管理</a-menu-item>
-            <a-menu-item key="6">运行监控</a-menu-item>
-            <a-menu-item key="7">仪表盘</a-menu-item>
+            <a-menu-item key="workbench">工作台</a-menu-item>
+            <a-menu-item key="product">数据基础管理</a-menu-item>
+            <a-menu-item key="need">需求管理</a-menu-item>
+            <a-menu-item key="branch">分支管理</a-menu-item>
+            <a-menu-item key="publish">发布管理</a-menu-item>
+            <a-menu-item key="monitoring">运行监控</a-menu-item>
+            <a-menu-item key="Dashboard">仪表盘</a-menu-item>
           </a-menu>
         </div>
-        <div class="menu-content">
+        <div class="menu-content" @click="handle" key="/Product">
             <div class="content-header">
                 <img src="../../assets/portrait.png" alt="头像">
                 <div class="content-title">
@@ -45,3 +42,13 @@
     </div>
   </div>
 </template>
+
+<script>
+import axios from 'axios';
+export default {
+   methods: {
+       
+    }
+}
+</script>
+
