@@ -84,11 +84,11 @@ export default {
 
                         }).then((response) => {
                             if (Object.is(response.status, 200)) {
+                                // 成功请求
                                 this.$message.success(response.message, 3);
-                                this.$router.push(key)({ 
-                                    path: '/Product'
-                                })
+                                this.$router.push({ path: '/product' })
                             } else {
+                                // 失败请求
                                 this.$message.error(response.message, 3);
                             }
                         })

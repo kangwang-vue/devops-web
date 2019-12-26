@@ -11,14 +11,22 @@ const routes = [
   },
   {
     path: "/",
-    name: "frame",
-    component: () => import("../views/layout/Frame.vue")
-  },
-  {
-    path: "/product",
-    name: "product",
-    component: () => import("../views/product/Product.vue")
+    name: "layout",
+    component: () => import("../views/layout/Layout.vue"),
+    children: [
+      {
+        path: "/workspace",
+        name: "workspace",
+        component: () => import("../views/workspace/Workspace.vue")
+      },
+      {
+        path: "/product",
+        name: "product",
+        component: () => import("../views/product/Product.vue")
+      },
+    ]
   }
+  
 ];
 
 const router = new VueRouter({

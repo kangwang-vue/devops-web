@@ -10,7 +10,7 @@ module.exports = {
         hotOnly: true, //是否开启热更新
         proxy: {
             '/api': {
-                target: 'http://devops-br-test.mypaas.com.cn', //API服务器的地址
+                target: 'http://devops-test.mypaas.com.cn', //API服务器的地址
                 changeOrigin: true, // 虚拟的站点需要更管origin
             }
         }

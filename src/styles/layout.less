@@ -1,0 +1,51 @@
+.layout {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &-header {
+        height: 48px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: #302929;
+
+        .logo {
+            width: 180px;
+            display: inline-block;
+            text-align: center;
+
+            img {
+                width: 120px;
+                height: auto;
+            }
+        }
+
+        .selector {
+            width: 160px;
+            margin-left: 20px;
+        }
+    }
+
+    &-content {
+        display: flex;
+        flex: 1;
+        overflow: auto;
+
+        .menu {
+            height: 100%;
+            width: 180px;
+            background: #ffffff;
+
+            .ant-menu {
+                height: 100%;
+            }
+        }
+
+        .right-content {
+            flex: 1;
+            overflow: auto;
+        }
+    }
+}
