@@ -6,7 +6,7 @@ import router from '../../router';
             <img src="../../assets/logo1.png" alt="云擎平台" />
         </div>
         <div class="selector">
-            <a-select defaultValue="lucy" style="width: 160px" @change="handleChange">
+            <a-select defaultValue="lucy" style="width: 160px" >
                 <a-select-option v-for="item in selectData" :key="item.value" :disabled="item.disabled">{{item.title}}</a-select-option>
             </a-select>
         </div>

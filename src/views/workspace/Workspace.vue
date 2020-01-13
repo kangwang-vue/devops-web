@@ -10,8 +10,5 @@
     <div class="logo">
         <img src="../../assets/devops-page.png" alt="结构图">
     </div>
-    <div class="logo">
-        <img src="../../assets/devops-page.png" alt="结构图">
-    </div>
 </div>
 </template>

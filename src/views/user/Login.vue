@@ -54,6 +54,7 @@
 
 <script>
 import axios from 'axios';
+import Cookies from 'js-cookie'
 export default {
     beforeCreate() {
         this.form = this.$form.createForm(this, {
@@ -68,7 +69,7 @@ export default {
                 if (!err) {
                     axios({
                             method: 'POST',
-                            url: '/api/user/login',
+                            url: '/brapi/user/login',
                             headers: {
                                 "Content-Type": "application/json"
                             },
@@ -81,12 +82,12 @@ export default {
                         })
                         .then((response) => {
                             return response.data;
-
                         }).then((response) => {
                             if (Object.is(response.status, 200)) {
                                 // 成功请求
                                 this.$message.success(response.message, 3);
-                                this.$router.push({ path: '/product' })
+                                this.$router.push({ path: '/product' });
+                                 Cookies.set('token', response.result.token)
                             } else {
                                 // 失败请求
                                 this.$message.error(response.message, 3);

@@ -6,6 +6,8 @@ import store from "./store";
 import "./registerServiceWorker";
 import "ant-design-vue/dist/antd.css";
 import "./styles/index.less";
+import axios from 'axios';
+axios.defaults.withCredentials=true
 
 Vue.use(Antd);
 Vue.config.productionTip = false;
