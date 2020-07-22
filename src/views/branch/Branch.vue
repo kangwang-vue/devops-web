@@ -1,4 +1,4 @@
-<template>
+ <template>
   <div class="branch">
     <div class="header">
       <div class="title">仓库列表</div>
@@ -10,8 +10,8 @@
         </div>
         <div class="table">
           <a-table rowKey="id" :columns="columns" :dataSource="data">
-            <span slot="apps" slot-scope="apps">
-              <span v-for="item in apps.app_codes" :key="item">{{item}}</span>
+            <span slot="apps" slot-scopappe="apps">
+              <span v-for="item in s.app_codes" :key="item">{{item}}</span>
             </span>
             <span slot="for_sql" slot-scope="for_sql">
               <!-- v-if~v-else判断数值 -->

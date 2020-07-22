@@ -5,6 +5,7 @@
         <Thirdly /><br />
         <Fourthly /><br />
         <Fifth />
+        <Tabs />
     </div>
 </template>
 <script>
@@ -13,6 +14,7 @@ import Second from './Second';
 import Thirdly from './Thirdly';
 import Fourthly from './Fourthly';
 import Fifth from './Fifth';
+import Tabs from './Tabs';
 export default {
   components:{
       First,
@@ -20,6 +22,7 @@ export default {
       Thirdly,
       Fourthly,
       Fifth,
+      Tabs,
   }
 }
 </script>

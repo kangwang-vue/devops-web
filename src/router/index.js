@@ -5,12 +5,12 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/login",
+    path: "/",
     name: "login",
     component: () => import("../views/user/Login.vue")
   },
   {
-    path: "/",
+    path: "/layout",
     name: "layout",
     component: () => import("../views/layout/Layout.vue"),
     children: [
@@ -18,11 +18,11 @@ const routes = [
         path: "/workspace",
         name: "workspace",
         component: () => import("../views/workspace/Workspace.vue")
-      },{
+      }, {
         path: "/product",
         name: "product",
         component: () => import("../views/product/Product.vue")
-      },{
+      }, {
         path: "/requirement",
         name: "requirement",
         component: () => import("../views/demand/Demand.vue")
@@ -30,22 +30,26 @@ const routes = [
         path: "/branch",
         name: "branch",
         component: () => import("../views/branch/Branch.vue")
-      },{
+      }, {
         path: "/publish",
         name: "publish",
         component: () => import("../views/publish/Publish.vue")
-      },{
-        path: "/monitoring",
-        name: "monitoring",
-        component: () => import("../views/managements/Branch.vue")
-      },{
+      }, {
+        path: "/versions",
+        name: "versions",
+        component: () => import("../views/versions/Versions.vue")
+      }, {
         path: "/dashboard",
         name: "dashboard",
         component: () => import("../views/forms/Forms.vue")
+      }, {
+        path: "/test",
+        name: "test",
+        component: () => import("../views/test/Test.vue")
       },
     ]
   }
-  
+
 ];
 
 const router = new VueRouter({
