@@ -1,27 +1,13 @@
 import Vue from "vue";
 import Vuex from "vuex";
+import moduleA from "./moduleA";
+import moduleB from "./moduleB";
 
 Vue.use(Vuex);
-
-export default new Vuex.Store({
-  state: {
-    count: 0,
-    isHome: true
-  },
-  mutations: {
-    increment(state) {
-      state.count++
-    },
-    changeIsHome(state) {
-      state.isHome = false
+const store = new Vuex.Store({
+    modules: {
+        moduleA,
+        moduleB
     }
-
-  },
-  getters: {
-    add: state => {
-      return state.count++;
-    }
-  },
-  actions: {},
-  modules: {}
-});
+})
+export default store;

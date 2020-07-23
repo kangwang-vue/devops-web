@@ -1,0 +1,104 @@
+.versions {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #f5efef;
+
+
+    .header {
+        height: 48px;
+        display: flex;
+        align-items: center;
+        padding-left: 16px;
+        background: #ffffff;
+
+        .title {
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            color: rgba(0, 0, 0, .85);
+            line-height: 26px;
+
+        }
+    }
+
+    .middle {
+        flex: 1;
+        margin: 16px 16px 32px;
+        padding: 24px;
+        background: #ffffff;
+        overflow: auto;
+
+        .content {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+
+            .form-button {
+               float:right;
+            }
+        }
+
+        .button {
+            display: flex;
+            justify-content: flex-end;
+            padding-bottom: 24px;
+        }
+
+        .table {
+            height: 100%;
+            overflow: auto;
+
+            .color-button {
+                display: inline-block;
+                width: 100px;
+                text-align: center;
+
+                div {
+                    display: inline-block;
+                }
+            }
+
+            .light-blue-button {
+                display: inline-block;
+                width: 100px;
+                text-align: center;
+                background: rgba(230, 255, 251, 1);
+                border: 1px solid rgba(135, 232, 222, 1);
+                border-radius: 4px;
+
+                span {
+                    color: rgba(19, 194, 194, 1);
+                }
+            }
+
+            .green-button {
+                display: inline-block;
+                width: 100px;
+                text-align: center;
+                background: rgba(246, 255, 237, 1);
+                border: 1px solid rgba(183, 235, 143, 1);
+                border-radius: 4px;
+
+                span {
+                    color: rgba(82, 196, 26, 1);
+                }
+            }
+
+            .dark-blue-button {
+                display: inline-block;
+                width: 100px;
+                text-align: center;
+                background: rgba(230, 247, 255, 1);
+                border: 1px solid rgba(145, 213, 255, 1);
+                border-radius: 4px;
+
+                span {
+                    color: rgba(24, 144, 255, 1);
+                }
+            }
+
+        }
+    }
+}

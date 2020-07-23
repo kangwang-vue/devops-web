@@ -88,6 +88,14 @@ export default {
           value: "/test",
           title: "测试",
         },
+        {
+          value: "/moduleA",
+          title: "moduleA",
+        },
+        {
+          value: "/moduleB",
+          title: "moduleB",
+        },
       ],
     };
   },
