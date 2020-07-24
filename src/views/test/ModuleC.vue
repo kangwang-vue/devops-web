@@ -1,6 +1,6 @@
 import router from '../../router';
 <template>
-  <div class="modeleA">
+  <div class="modeleC">
     {{ count }}
     {{ count2 }}
     <button @click="increment">点击</button>
@@ -21,36 +21,37 @@ export default {
   },
   methods: {
     increment() {
-      this.$store.dispatch("moduleA/increment", { name: "老母鸡" });
+      this.$store.dispatch("moduleC/increment", { name: "老母鸡" });
     },
     joinxxxx() {
-      this.$store.dispatch("moduleA/join");
+      this.$store.dispatch("moduleC/join");
     },
     clear() {
-      this.$store.dispatch("moduleA/clear");
+      this.$store.dispatch("moduleC/clear");
     },
     reverse() {
-      this.$store.dispatch("moduleA/reverse");
+      this.$store.dispatch("moduleC/reverse");
     },
     forEach() {
-      this.$store.dispatch("moduleA/forEach");
+      this.$store.dispatch("moduleC/forEach");
     },
     find() {
-      this.$store.dispatch("moduleA/find");
+      this.$store.dispatch("moduleC/find");
     },
     concat() {
-      this.$store.dispatch("moduleA/concat");
+      this.$store.dispatch("moduleC/concat");
     },
     sort() {
-      this.$store.dispatch("moduleA/sort");
+      this.$store.dispatch("moduleC/sort");
     },
   },
   computed: {
-    count() {debugger
-      return this.$store.getters["moduleA/add"];
+    count() {
+      debugger;
+      return this.$store.getters["moduleC/add"];
     },
     count2() {
-      return this.$store.state.moduleA.count;
+      return this.$store.state.moduleC.count;
     },
   },
 };

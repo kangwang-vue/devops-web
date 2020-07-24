@@ -55,6 +55,16 @@ const routes = [
         name: "moduleB",
         component: () => import("../views/test/ModuleB.vue")
       },
+      {
+        path: "/moduleC",
+        name: "moduleC",
+        component: () => import("../views/test/ModuleC.vue")
+      },
+      {
+        path: "/moduleD",
+        name: "moduleD",
+        component: () => import("../views/test/ModuleD.vue")
+      },
     ]
   }
 

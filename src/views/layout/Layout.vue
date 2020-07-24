@@ -96,6 +96,14 @@ export default {
           value: "/moduleB",
           title: "moduleB",
         },
+          {
+          value: "/moduleC",
+          title: "moduleC",
+        },
+          {
+          value: "/moduleD",
+          title: "moduleD",
+        },
       ],
     };
   },

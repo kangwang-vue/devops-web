@@ -1,6 +1,6 @@
 import router from '../../router';
 <template>
-  <div class="test">
+  <div class="modeleB">
     {{ name }}
     <button @click="console">点击</button>
   

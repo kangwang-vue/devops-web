@@ -1,4 +1,5 @@
 import router from '../../router';
+
 <template>
   <div class="test">
     {{ count }}
